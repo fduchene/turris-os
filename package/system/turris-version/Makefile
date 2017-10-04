@@ -29,7 +29,9 @@ define Package/turris-version/postinst
 # Danger: spaces are not ordinary spaces, but special unicode ones
 [ -n "$$IPKG_INSTROOT" ] || {
 create_notification -s news " • dnsmasq: oprava různých bezpečnostních chyb
+ • openssh: update na novější verzi opravující různé bezpečnostní chyby
  • asm1062: možné zlepšení stability" • dnsmasq: fix various security issues
+ • openssh: security update
  • asm1062: workaround to improve stability"
 }
 endef
